@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Virtual Library</title>
+<meta name="description" content="A virtual library of the books I've read and the ones I plan to read.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="My Virtual Library">
+<meta property="og:description" content="Books I've read and the ones I plan to read.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-view="home">
+
+<main>
+  <section id="home" class="panel center">
+    <div class="wrap">
+      <div class="hero">
+        <!-- Optional: save a photo of yourself as photo.jpg next to this file. Hidden if missing. -->
+        <img class="photo" src="photo.jpg" alt="" onerror="this.remove()">
+        <div class="text">
+          <!-- Change the intro by editing the data-type text below. -->
+          <div class="line title pending" data-track="intro" data-type="My Virtual Library"></div>
+          <div class="line pending" data-track="intro" data-type="Hi, I'm [Your Name]."></div>
+          <div class="line dim pending" data-track="intro" data-type="Here you'll find the books I've read and the ones I plan to read next."></div>
+        </div>
+      </div>
+
+      <div class="shelves">
+        <a class="shelf-card" href="#read" data-view="read">
+          <div class="label par pending" data-type="- Read"></div>
+        </a>
+        <a class="shelf-card" href="#unfinished" data-view="unfinished">
+          <div class="label par pending" data-type="- Unfinished"></div>
+        </a>
+        <a class="shelf-card" href="#unread" data-view="unread">
+          <div class="label par pending" data-type="- Unread"></div>
+        </a>
+      </div>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section id="read" class="panel">
+    <div class="wrap wide"></div>
+  </section>
+
+  <section id="unfinished" class="panel">
+    <div class="wrap wide"></div>
+  </section>
+
+  <section id="unread" class="panel">
+    <div class="wrap wide"></div>
+  </section>
+</main>
+
+<div class="hint">click or press a key to skip typing</div>
+<script src="app.js"></script>
+</body>
+</html>

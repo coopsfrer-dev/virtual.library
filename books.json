@@ -1,0 +1,378 @@
+{
+  "owner": "Your Name",
+  "tagline": "What I've read, what I'm reading, and what's next.",
+  "books": [
+    {
+      "title": "Truffle Boy",
+      "author": "Ian Purkayastha",
+      "isbn": "",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": "",
+      "cover": {
+        "style": "cloth",
+        "bg": "#c5b25e",
+        "ink": "#7b6b2b"
+      }
+    },
+    {
+      "title": "Harry Potter y la piedra filosofal",
+      "author": "J.K. Rowling",
+      "isbn": "9788478884452",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Life of Pi",
+      "author": "Yann Martel",
+      "isbn": "9780156027328",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "isbn": "9780451530066",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": "",
+      "cover": {
+        "style": "signet",
+        "bg": "#0f0f0f",
+        "ink": "#f1ece0",
+        "accent": "#a3151b",
+        "label": "A Signet Classic",
+        "publisher": "Signet Classics"
+      }
+    },
+    {
+      "title": "Kitchen Confidential",
+      "author": "Anthony Bourdain",
+      "isbn": "9780060934910",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Martyr!",
+      "author": "Kaveh Akbar",
+      "isbn": "9780593537619",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Ishmael",
+      "author": "Daniel Quinn",
+      "isbn": "9780553470529",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Illusions: The Adventures of a Reluctant Messiah",
+      "author": "Richard Bach",
+      "isbn": "9780440343196",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "isbn": "9780452264465",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Grendel",
+      "author": "John Gardner",
+      "isbn": "9780812417302",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "The Things They Carried",
+      "author": "Tim O'Brien",
+      "isbn": "9780606170833",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Going After Cacciato",
+      "author": "Tim O'Brien",
+      "isbn": "9780440129660",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Parable of the Sower",
+      "author": "Octavia E. Butler",
+      "isbn": "9781472263667",
+      "status": "read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "isbn": "9780140449174",
+      "status": "unfinished",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "El Alquimista",
+      "author": "Paulo Coelho",
+      "isbn": "9780062511409",
+      "status": "unfinished",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": "",
+      "cover": {
+        "style": "plain",
+        "bg": "#e4d3a2",
+        "ink": "#2b1d0e",
+        "publisher": "HarperCollins Publishers"
+      }
+    },
+    {
+      "title": "The Art of Thinking",
+      "author": "Ernest Dimnet",
+      "isbn": "9781417905867",
+      "status": "unfinished",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "A Cook's Tour",
+      "author": "Anthony Bourdain",
+      "isbn": "9780786242597",
+      "status": "unfinished",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "isbn": "9780374533557",
+      "status": "unfinished",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Harry Potter y la cámara secreta",
+      "author": "J.K. Rowling",
+      "isbn": "9788478887606",
+      "status": "unfinished",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer, translated by Samuel Butler",
+      "isbn": "",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": "",
+      "cover": {
+        "style": "cloth",
+        "bg": "#3d485c",
+        "ink": "#d8c486"
+      }
+    },
+    {
+      "title": "Goethe's Faust, Parts I and II",
+      "author": "Johann Wolfgang von Goethe, translated by Louis MacNeice",
+      "isbn": "",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": "",
+      "cover": {
+        "style": "galaxy",
+        "bg": "#ecebe3",
+        "ink": "#2e2c55",
+        "label": "A Galaxy Book",
+        "publisher": "Oxford University Press"
+      }
+    },
+    {
+      "title": "Amplifiers",
+      "author": "Tom Finegan",
+      "isbn": "9781119794578",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Cooked",
+      "author": "Michael Pollan",
+      "isbn": "9780143125334",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": "",
+      "cover": {
+        "style": "plain",
+        "bg": "#f1eee5",
+        "ink": "#2b2b2b",
+        "label": "Penguin Books"
+      }
+    },
+    {
+      "title": "Psycho-Cybernetics",
+      "author": "Maxwell Maltz",
+      "isbn": "9780879801274",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Notes to Myself",
+      "author": "Hugh Prather",
+      "isbn": "9780911226096",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "The Journals of Captain Cook",
+      "author": "James Cook",
+      "isbn": "9780140436471",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "The Grand Manan Historian",
+      "author": "Eric Allaby",
+      "isbn": "",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": "",
+      "cover": {
+        "style": "plain",
+        "bg": "#6b7a5a",
+        "ink": "#f1ecd8"
+      }
+    },
+    {
+      "title": "How to Lie with Statistics",
+      "author": "Darrell Huff",
+      "isbn": "9780393094268",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Body Language",
+      "author": "Julius Fast",
+      "isbn": "9780671673253",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Between Two Ages",
+      "author": "Zbigniew Brzezinski",
+      "isbn": "9780670160419",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "Jonathan Livingston Seagull",
+      "author": "Richard Bach",
+      "isbn": "9780743278904",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupéry",
+      "isbn": "9788478880065",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    },
+    {
+      "title": "On Food and Cooking",
+      "author": "Harold McGee",
+      "isbn": "9780684800011",
+      "status": "to-read",
+      "rating": 0,
+      "finished": "",
+      "tags": [],
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+/* Shared by the whole site: edit colors here and everything changes. */
+:root{
+  --bg:#f6f4ee;      /* page background (soft off-white) */
+  --text:#22211d;    /* main text */
+  --dim:#7a766b;     /* secondary text */
+  --line:#e2dfd4;    /* thin borders */
+  --card:#fbfaf6;    /* home page boxes */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font:15px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
+h1,h2,p,div{margin:0}
+
+/* ---------- layout ---------- */
+/* Each place fills the screen. Moving between them slides panels; the page itself never scrolls. */
+html,body{height:100%;overflow:hidden}
+.panel{
+  position:fixed;inset:0;overflow-y:auto;padding:9vh 20px 60px;
+  transition:transform .85s cubic-bezier(.65,0,.25,1),visibility 0s .85s;visibility:hidden;
+}
+.panel.center{display:flex;align-items:center;padding-top:40px}
+#home{transform:translateY(-100%)}
+#read,#unfinished,#unread{transform:translateY(100%)}
+body[data-view=home] #home,body[data-view=read] #read,body[data-view=unfinished] #unfinished,body[data-view=unread] #unread{
+  transform:translateY(0);visibility:visible;transition:transform .85s cubic-bezier(.65,0,.25,1),visibility 0s;
+}
+.back{
+  display:block;background:none;border:0;padding:0;margin-bottom:18px;font:inherit;color:var(--dim);
+  cursor:pointer;min-height:1.7em;
+}
+.back:hover{color:var(--text)}
+.wrap{max-width:900px;margin:0 auto;width:100%}
+.wrap.wide{max-width:1400px}
+.line{min-height:1.7em;margin-bottom:8px;white-space:pre-wrap;word-break:break-word}
+.title{font-size:28px;font-weight:700;margin-bottom:6px}
+.dim{color:var(--dim)}
+
+/* home page */
+.hero{display:flex;gap:28px;align-items:center;margin-bottom:28px;flex-wrap:wrap}
+.photo{width:140px;height:140px;border-radius:50%;object-fit:cover;background:var(--line)}
+.hero .text{flex:1;min-width:240px}
+.shelves{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin-top:20px}
+.shelf-card{display:block;text-decoration:none;color:var(--text);padding:2px 0;transition:opacity .15s}
+.shelf-card:hover .label,.shelf-card:focus-visible .label{text-decoration:underline;text-underline-offset:4px}
+.shelf-card:focus-visible{outline:none}
+.shelf-card .label{font-size:16px;font-weight:700;min-height:1.7em}
+.dots{margin-top:4px;min-height:1.7em;font-weight:700}
+
+/* shelves: three covers across, details type out on hover */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px clamp(12px,3vw,48px);margin-top:28px;max-width:calc(3*(62vh*2/3) + 100px)}
+.book{color:var(--text);outline:none}
+.details{margin-top:14px;min-height:7.5em}
+.cover{
+  aspect-ratio:2/3;border-radius:4px 8px 8px 4px;overflow:hidden;position:relative;
+  box-shadow:3px 3px 4px rgba(0,0,0,.18),11px 13px 18px rgba(0,0,0,.26);display:flex;align-items:center;justify-content:center;
+  padding:12px;color:#fff;font-weight:700;font-size:14px;line-height:1.3;text-align:center;
+  transition:transform .15s;
+}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover::after{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(90deg,rgba(0,0,0,.3),transparent)}
+/* covers drawn in CSS when there is no photo: look like printed books */
+.cover.designed{
+  container-type:inline-size;display:block;padding:0;
+  background:var(--bg);color:var(--ink);text-align:center;font-weight:400;
+  font-family:Georgia,"Iowan Old Style","Palatino Linotype","Times New Roman",serif;
+}
+.designed .inner{
+  height:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:9cqw 8cqw;
+}
+.designed .lab,.designed .pub{font-size:3.6cqw;letter-spacing:.18em;text-transform:uppercase;opacity:.85;min-height:1em}
+.designed .mid{width:100%}
+.designed .ct{font-weight:700;line-height:1.08}
+.designed .ct.s{font-size:14cqw}.designed .ct.m{font-size:11cqw}.designed .ct.l{font-size:8.8cqw}
+.designed .rule{width:16cqw;height:1px;background:var(--ink);opacity:.55;margin:5cqw auto}
+.designed .ca{font-size:5.4cqw;letter-spacing:.14em;text-transform:uppercase}
+/* dull cloth binding with a stamped title */
+.cover.cloth{
+  background-color:var(--bg);
+  background-image:
+    repeating-linear-gradient(0deg,rgba(0,0,0,.09) 0 1px,transparent 1px 3px),
+    repeating-linear-gradient(90deg,rgba(0,0,0,.09) 0 1px,transparent 1px 3px),
+    repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 5px),
+    radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.14),transparent 65%);
+}
+.cloth .ct,.cloth .ca,.cloth .lab,.cloth .pub{text-shadow:0 1px 0 rgba(255,255,255,.28),0 -1px 0 rgba(0,0,0,.4)}
+.cloth .rule{box-shadow:0 1px 0 rgba(255,255,255,.28)}
+/* Signet Classic: black cover with a colored band */
+.signet .mid{background:var(--accent);margin:0 -8cqw;padding:6cqw 8cqw;color:#fff}
+.signet .rule{background:#fff}
+/* Galaxy Book: pale cover with a thin frame */
+.galaxy::before{content:"";position:absolute;inset:4cqw;border:1px solid var(--ink);opacity:.5;pointer-events:none}
+.book .t{font-weight:700;font-size:16px;line-height:1.4}
+.book .a{color:var(--dim);font-size:14px}
+.book .s{font-size:14px;margin-top:2px}
+.book .n{color:var(--dim);font-size:13px;margin-top:6px}
+.book:hover .cover,.book:focus-visible .cover{transform:translateY(-4px)}
+
+.pending{visibility:hidden}
+.typing::after{content:"|";margin-left:1px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hint{position:fixed;top:10px;right:14px;font-size:12px;color:var(--dim);z-index:5}
+@media (max-width:600px){.hint{display:none}.title{font-size:24px}}
